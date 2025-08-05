@@ -1,0 +1,57 @@
+Network Port Scan Report
+========================
+
+Date: August 5, 2025  
+Scan Type: TCP SYN Scan  
+Tool Used: Nmap  
+Command Used: nmap -sS 192.168.1.0/24  
+Optional Tool: Wireshark (not used during this scan)
+
+------------------------------------------------------------
+1. IP Range Scanned
+------------------------------------------------------------
+Local Network Subnet: 192.168.1.0/24  
+Total Hosts Scanned: 256 (possible IP addresses)
+
+------------------------------------------------------------
+2. Discovered Hosts and Open Ports
+------------------------------------------------------------
+
+[Host: 192.168.1.1]
+- Port 80/tcp    open   http (Web Interface)
+- Port 443/tcp   open   https
+
+[Host: 192.168.1.10]
+- Port 22/tcp    open   ssh (Remote Login - Linux)
+- Port 8080/tcp  open   http-proxy (Custom Web App)
+
+[Host: 192.168.1.15]
+- Port 139/tcp   open   netbios-ssn (File Sharing)
+- Port 445/tcp   open   microsoft-ds (Windows SMB)
+
+[Host: 192.168.1.25]
+- Port 9100/tcp  open   jetdirect (Network Printer)
+
+------------------------------------------------------------
+3. Common Services on Open Ports
+------------------------------------------------------------
+- Port 22: SSH (Secure Shell) - Used for secure remote login.
+- Port 80: HTTP - Standard web traffic.
+- Port 443: HTTPS - Encrypted web traffic.
+- Port 139/445: SMB - Windows file and printer sharing.
+- Port 8080: HTTP Proxy - Often used by test web servers or apps.
+- Port 9100: JetDirect - Used for direct printer communication.
+
+------------------------------------------------------------
+4. Security Observations
+------------------------------------------------------------
+✔ SSH should be restricted by IP or use key-based authentication.
+✔ Unused services (like SMB or JetDirect) should be disabled if not needed.
+✔ Web interfaces (routers, printers) should use strong passwords and HTTPS.
+✔ Monitor for unknown hosts or unexpected services on your network.
+
+------------------------------------------------------------
+5. Scan Output File
+------------------------------------------------------------
+You can save the scan results using:
+Command: nmap -sS 192.168.1.0/24 -oN nmap_results.txt
