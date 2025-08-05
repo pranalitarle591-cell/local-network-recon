@@ -1,0 +1,19 @@
+References
+
+[1] Nmap: Network Mapper - https://nmap.org/
+    Official website for downloading Nmap and accessing its documentation.
+
+[2] Nmap Book: Nmap Network Scanning by Gordon "Fyodor" Lyon - https://nmap.org/book/
+    Detailed guide on Nmap usage, scanning techniques, and network security.
+
+[3] Wireshark: Network Protocol Analyzer - https://www.wireshark.org/
+    Used for optional packet capture and analysis.
+
+[4] Common TCP/UDP Port List - https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+    Useful for identifying services running on discovered ports.
+
+[5] Local IP Address Discovery - https://www.cyberciti.biz/faq/linux-find-out-my-ip-address/
+    Guide to determining your IP address and subnet.
+
+[6] Nmap Command Reference - https://nmap.org/book/man.html
+    Manual for Nmap command-line options and scanning techniques.
